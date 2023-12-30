@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HJW1CC37PDT6AP8WGG1QQWPM
-  version: v2.0
----
-
 # Mobile Automation Framework using WebdriverIO v8 (by Walter Rojas)
 
 Initial mobile automation framework template using [WebdriverIO](https://webdriver.io/) v8
