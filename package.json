@@ -1,0 +1,33 @@
+{
+  "name": "wdio-v8-mobile-automation-framework-walter-rojas",
+  "version": "1.0.0",
+  "description": "Mobile automation framework using WebdriverIO v8",
+  "type": "module",
+  "author": "Walter Rojas",
+  "keywords": [
+    "webdriverio",
+    "appium",
+    "selenium",
+    "android",
+    "ios"
+  ],
+  "devDependencies": {
+    "@wdio/appium-service": "^8.22.0",
+    "@wdio/browserstack-service": "^8.27.1",
+    "@wdio/cli": "^8.22.0 ",
+    "@wdio/config": "^8.22.0",
+    "@wdio/cucumber-framework": "^8.22.0",
+    "@wdio/globals": "^8.22.0",
+    "@wdio/local-runner": "^8.22.0",
+    "@wdio/spec-reporter": "^8.22.0",
+    "appium": "^2.3.0",
+    "ts-node": "^10.9.2",
+    "webdriverio": "^8.22.0"
+  },
+  "scripts": {
+    "test": "ENV=local PLATFORM=android npx wdio ./config/wdio.android.conf.js",
+    "android": "ENV=local PLATFORM=android npx wdio ./config/wdio.android.conf.js",
+    "ios": "ENV=local PLATFORM=ios npx wdio ./config/wdio.ios.conf.js",
+    "android-bs": "ENV=bs PLATFORM=android npx wdio ./config/wdio.android.bs.conf.js"
+  }
+}
